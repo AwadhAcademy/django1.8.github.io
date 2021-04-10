@@ -1,0 +1,55 @@
+{% extends "basic.html" %}
+{% block title %}
+AWADH confirm your registration
+{% endblock title %}
+{% load static%}
+{% block style %}
+
+body
+{
+background: url('{% static "photos/log-back.jpg"%}');
+background-repeat: no-repeat;
+background-size: cover;
+}
+.container
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 51vh;
+/* border: 2px solid black; */
+width: 62vw;
+margin-top: 15vh;
+background: #ffffff54;
+}
+.container img
+{
+height: 20vh;
+width: 20vw;
+}
+.container h4,h3
+{
+font-family: rubik;
+color: white;
+font-weight: bolder;
+font-size: 19px;
+
+}
+{% endblock style %}
+{% block footer %}
+style=" background: #00000073;"
+{% endblock footer %}
+{% block body %}
+<div class="container">
+    <img src="{% static 'photos/ok.png'%}" alt="not lode due to intern glitch">
+    <h3 style="color: black;">Thanks for confrim your registration</h3>
+    <h4>your data in precious for us and you dont worry for your privacy</h4>
+
+</div>
+<div>
+    {% for i in messages %}
+    <h3>messages</h3>
+    {% endfor %}
+</div>
+{% endblock body %}

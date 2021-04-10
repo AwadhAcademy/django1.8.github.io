@@ -1,0 +1,446 @@
+/* .text h1 {
+
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-weight: bold;
+}
+
+.material {
+    display: flex;
+    margin-top: 6%;
+    flex-direction: column;
+}
+
+.image {
+    position: absolute;
+    left: 62%;
+    top: 90vh;
+}
+
+.text {
+    margin-left: 5%;
+    margin-top: 9%;
+
+} */
+.container1 img,
+svg {
+    vertical-align: middle;
+    height: 20%;
+}
+
+.text h1 {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-weight: bold;
+    text-align: center;
+    /* background: #5de66e2e; */
+    background-image: linear-gradient(to right, rgba(180, 0, 0, 0), rgb(255 152 0 / 38%));
+    padding: 18px;
+}
+
+.text p {
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: justify;
+
+}
+
+
+.text {
+    position: relative;
+    /* left: 0; */
+    /* border: 2px solid rgb(179, 0, 255); */
+    width: 42%;
+    height: 100%;
+}
+
+/* .text2 {
+    position: relative;
+    left: 23vh;
+    border: 2px solid red;
+} */
+.content2 .text2 p {
+    color: black;
+    /* border: 1px solid black; */
+    /* float: right; */
+    font-family: 'PT Sans Narrow', sans-serif;
+    width: 65%;
+    text-align: justify;
+
+
+}
+
+.content2 .text2 h1 {
+    /* border: 1px solid rgb(69, 157, 25); */
+    color: rgb(16 16 16);
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-weight: bold;
+    text-align: center;
+    /* background: #5de66e2e; */
+    background-image: linear-gradient(to right, rgba(180, 0, 0, 0), rgb(14 121 106));
+    padding: 18px;
+}
+
+.content2 img:hover {
+    box-shadow: 4px 6px 29px -1px #38bded;
+}
+
+.content1 img:hover {
+    box-shadow: 4px 6px 29px -1px #38bded;
+}
+
+.content2 .text2 h1:hover {
+    box-shadow: 4px 6px 29px -1px #9e2cce;
+}
+
+.content1 .text h1:hover {
+    box-shadow: 4px 6px 29px -1px #9e2cce;
+}
+
+.content2 {
+    color: rgb(245, 179, 179);
+}
+.image {
+    position: relative;
+    left: 20%;
+}
+.material {
+    display: flex;
+    flex-direction: column;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    margin-top: 5%;
+    /* border: 2px solid red; */
+}
+
+.content2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    margin-top: 5%;
+    /* border: 2px solid rgb(105, 16, 183); */
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.ayush {
+
+    height: 45%;
+    width: 46%;
+    align-self: center;
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
+}
+
+.updates {
+    border: 2px solid green;
+}
+
+.hadder {
+    border: 2px solid black;
+}
+
+.hadder_data {
+    display: flex;
+    flex-direction: row;
+}
+
+.hadder_data h3 {
+    padding: 18px;
+    font-size: 47px;
+    font-family: 'Lobster';
+    color: rgb(136 75 12);
+}
+
+.plan_1 {
+    /* border: 5px double rebeccapurple; */
+    margin-top: 18px;
+    font-family: 'Rubik';
+}
+
+.planer {
+    margin-top: 14px;
+    border: 5px double rebeccapurple;
+}
+
+.last {
+    margin-top: 5%;
+    /* height: 120px; */
+    background: #7d7d7d;
+    text-align: center;
+}
+
+.links {
+    position: relative;
+    top: 29%;
+    text-decoration: none;
+    color: chartreuse;
+    font-family: cursive;
+
+
+}
+
+.last h3 {
+    position: relative;
+    top: 9%;
+    font-family: cursive;
+    color: cornsilk;
+}
+
+.last p {
+    position: relative;
+    top: 15%;
+    color: white;
+    font-family: fangsong;
+}
+
+.card1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem; */
+    /* display :inline-block; */
+    margin: 0px;
+    margin-top: 5%;
+    margin-right: 5%;
+    align-items: center;
+}
+
+.pics {
+    width: 63%;
+    margin-left: 57px;
+}
+
+.setting {
+    display: flex;
+}
+
+.settingdata {
+    display: flex;
+    flex-direction: column;
+}
+
+.settingdata h1 {
+    color: honeydew;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    ;
+}
+
+.gif {
+    position: relative;
+    left: 7%;
+    height: 32vh;
+}
+
+.slider {
+    /* height: 3vh; */
+    padding: 2%;
+    background: #cff4fc;
+    color: #1828e6;
+    font-size: 20px;
+    font-family: 'Rubik';
+    border: 2px dotted;
+    animation-name: slider_ani;
+    animation-duration: 15s;
+}
+
+@keyframes slider_ani {
+    0% {
+        color: green;
+    }
+
+    25% {
+        color: red;
+        background-color: burlywood;
+    }
+}
+
+.pannel {
+    /* background-color: royalblue; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+.course {
+    /* background-color: salmon; */
+    height: 53vh;
+    width: 43vh;
+    margin: 10px;
+    align-items: center;
+    text-align-last: center;
+    border: 2px solid black;
+    border-radius: 26px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #092E20;
+    color: white;
+}
+
+.course:hover {
+    background-color: #092e20eb;
+    color: white;
+    cursor: pointer;
+    /* opacity: 0.2; */
+}
+
+.course h3 {
+    font-family: rubik;
+}
+
+.course p {
+    text-align: center;
+    font-family: rubik;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.crousal {
+    border: 2px solid black;
+    color: blueviolet;
+    margin-bottom: 19px;
+    background: azure;
+    font-family: revert;
+}
+
+.sec1 img {
+    width: 40vw;
+}
+
+.sec2 h1 {
+    font-family: rubik;
+    background: linear-gradient(347deg, #c39d9d, #248a6961);
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 16px;
+    color: mediumvioletred;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ///////////////////////////// RESPONSIVE ////////////////////// */
+
+@media (max-width:600px) {
+    .content1 {
+        flex-direction: column;
+    }
+
+    .content2 {
+        flex-direction: column-reverse;
+    }
+
+    .image {
+        left: 0%;
+    }
+
+    .text h1 {
+        text-align: center;
+    }
+
+    .text2 {
+
+        left: 0%;
+    }
+
+    .text2 h1 {
+
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .test {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .w-100 {
+
+        height: 48vh;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .content2 .text2 p {
+        width: 100%;
+    }
+
+    .hadder_data {
+        height: 76px;
+    }
+
+    .hadder_data h3 {
+        font-size: 27px;
+    }
+
+    .logo2 {
+        height: 100%;
+        width: 50%;
+    }
+
+    .card1 {
+        flex-direction: column;
+    }
+
+    .con {
+        width: 100%;
+    }
+
+    .collection {
+        position: relative;
+        left: 10%;
+        font-size: 10px;
+    }
+
+    .adjust h3 {
+        font-size: 5px;
+        position: relative;
+        left: 70px;
+    }
+
+    .container {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .sec1 img {
+        width: 90vw;
+    }
+}

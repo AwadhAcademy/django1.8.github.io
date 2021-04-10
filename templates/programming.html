@@ -1,0 +1,75 @@
+
+{% extends "basic.html" %}
+{% block title %}Programming{% endblock title %}
+{%load  static %}
+{% block programming_color %}
+style=" color: red; font-weight: bold;"
+{% endblock programming_color %}
+{% block body %}
+<marquee behavior="scroll" direction="right" class="slider">Awadh provides an wonderful oppurtuity in computer course
+  a crash course
+  with computer basics and prrogramming with in 6 month's</marquee>
+
+<div class="pannel container">
+  <a href="{% url 'basic' %}">
+    <div class="course" id="course_1">
+      <img src="{%static 'photos/basic.png'%}" alt="Courses Image" style="height: 46%" />
+      <h3>Computer Basic</h3>
+      <p>
+        In this series, we will learn about computer basic For Absolute
+        Beginners In Hindi
+      </p>
+    </div>
+  </a>
+  <a href="{% url 'cc++' %}">
+    <div class="course" id="course_2">
+      <img src="{%static 'photos/cc++.png'%}" alt="Courses Image" style="height: 46%" />
+      <h3>C/C++ Course</h3>
+      <p>
+        In this series, we will learn about C/C++ Tutorials For Absolute
+        Beginners In Hindi
+      </p>
+    </div>
+  </a>
+  <a href="{% url 'python' %}">
+    <div class="course" id="course_3">
+      <img src="{%static 'photos/python.jpg'%}" alt="Courses Image" style="height: 46%" />
+      <h3>Python Course</h3>
+      <p>
+        In this series, we will learn about Python Tutorials For Absolute
+        Beginners In Hindi
+      </p>
+    </div>
+  </a>
+  <a href="{% url 'webdevlopment'%}">
+    <div class="course" id="course_4">
+      <img src="{%static 'photos/webdevlopment.png'%}" alt="Courses Image" style="height: 46%" />
+      <h3>Web Devlopment</h3>
+      <p>
+        In this series, we will learn about Web devlopment Tutorials For
+        Absolute Beginners In Hindi
+      </p>
+    </div>
+  </a>
+  <a href="{% url 'django'%}">
+    <div class="course" id="course_5">
+      <img src="{%static 'photos/django.png'%}" alt="Courses Image" style="height: 46%" />
+      <h3>Django</h3>
+      <p>
+        In this series, we will learn about Django Tutorials For Absolute
+        Beginners In Hindi
+      </p>
+    </div>
+  </a>
+  <a href="{% url 'androidstudio'%}">
+    <div class="course" id="course_6">
+      <img src="{%static 'photos/android.png'%}" alt="Courses Image" style="height: 46%" />
+      <h3>Android Studio</h3>
+      <p>
+        In this series, we will learn about Android studio Tutorials For
+        Absolute Beginners In Hindi
+      </p>
+    </div>
+  </a>
+</div>
+{% endblock body %}

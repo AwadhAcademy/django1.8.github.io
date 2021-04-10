@@ -1,0 +1,166 @@
+/* body
+{
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.Admission_Form {
+  background-color: #cacaca4a;
+  /* width: 45%; */
+  position: relative;
+  height: 30rem;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* /* left: 28%; */
+
+}
+
+.Admission_Form h1 {
+
+  background: #cacaca4a;
+  height: 4.1rem;
+  text-align: center;
+  color: black;
+  font-family: ubuntu;
+  padding-top: 0.5rem;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.admission_data {
+  margin-bottom: 13px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  font-family: cursive;
+}
+
+.sign-up {
+
+  position: relative;
+  PADDING: 0px;
+  WIDTH: 174px;
+  height: 33px;
+  font-size: 19px;
+  color: white;
+  background: #e4161678;
+  border: none;
+  top: 25%;
+  width: 314px;
+  font-family: 'Ubuntu';
+}
+
+.sac-edit {
+  position: relative;
+  bottom: -4vh;
+}
+
+.member {
+  position: relative;
+  height: 35%;
+  left: -18%;
+  top: -3%;
+}
+
+/* ///////////////////// Juniur 1-8 */
+.class-1-8-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.helo {
+  text-align: center;
+  position: relative;
+  top: 5rem;
+  font-family: ubuntu;
+  cursor: pointer;
+}
+
+.subject-1-8 {
+  position: relative;
+  top: 24vh;
+}
+
+.subject-1-8 {
+  margin-left: 15px;
+}
+
+.chapters {
+  text-decoration: none;
+  font-family: cursive;
+  margin-left: 7%;
+  color: black;
+}
+
+.material_type {
+  text-align: center;
+  font-family: ubuntu;
+  color: red;
+  background: #1301011c;
+  position: relative;
+  top: 1rem;
+}
+
+.contace_data {
+
+  background-color: #a3e2d857;
+  display: flex;
+  position: relative;
+  top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  height: 15rem;
+  font-family: fantasy;
+
+}
+
+.contace_data a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo1 {
+  height: 100%;
+  width: 50%;
+}
+
+.logo2 {
+  height: 100%;
+  width: 23vw;
+}
+
+.contace_source {
+  display: flex;
+  position: relative;
+  top: 3rem;
+  align-items: center;
+  justify-content: center;
+  place-content: space-evenly;
+  height: 38vh;
+}
+
+.con_images {
+  height: 5rem;
+  margin-bottom: 13px;
+}
+
+.pagecon {
+  float: right;
+  position: relative;
+  right: 38%;
+  bottom: -60px;
+}
+
+@media (max-width:600px) {
+  .logo2 {
+    height: 100%;
+    width: 50vw;
+  }
+}

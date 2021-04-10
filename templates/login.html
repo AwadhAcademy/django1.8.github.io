@@ -1,0 +1,71 @@
+{% extends "basic.html" %}
+{% block title %} Login-With Awadh {% endblock title%}
+{% load static%}
+{% block style %}
+
+body {
+  background: url('{% static "photos/log-back.jpg"%}');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.form {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+/* border: 2px solid; */
+padding: 10px;
+/* width: 80vw; */
+align-items: center;
+justify-content: center;
+margin: 61px 16%;
+background: #7979795c;
+
+}
+
+.field {
+margin-top: 8px;
+width: 90%;
+border: none;
+padding-left: 14px;
+font-family: rubik;
+border-radius: 6px;
+}
+
+.logo {
+height: 17vh;
+}
+.btn
+{
+width: 90%;
+margin-top: 8px;
+background-color: #7d7d7d;
+border: none;
+}
+@media (max-width:600px) {
+    .form {
+     margin:0px
+    }
+  }
+
+{% endblock style %}
+{% block footer %}
+ style=" background: #00000073;"
+{% endblock footer %}
+{% block body %}
+<form action="" method="POST" class="form" style="display: flex; flex-direction: column; margin-top: 5px;">
+    {% csrf_token %}
+    <img class="logo" src="{% static 'photos/logo.png'%}" alt="">
+    <h4>Please Fill the form</h4>
+    <input class="field" type="text" name="first_name" placeholder="First Name">
+    <input class="field" type="text" name="last_name" placeholder="last_name">
+    <input class="field" type="text" name="user_name" placeholder="User name">
+    <input class="field" type="number" name="phone" placeholder="Contact number">
+    <input class="field" type="password" name="password1" placeholder="New Password">
+    <input class="field" type="password" name="password2" placeholder="Confirm Password">
+    <input class="field" type="email" name="email" placeholder="Email.">
+    <button type="submit" class="btn btn-info">Submit</button>
+    <!-- <button type="submit" class="btn btn-danger">Already have account</button> -->
+</form>
+{% endblock body %}

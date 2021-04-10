@@ -1,0 +1,75 @@
+{% extends "basic.html" %}
+{% block title %}Awadh Programming{% endblock title%}
+{% load static %}
+{%block body %}
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{%static 'photos/template.png'%}" class="d-block w-100" alt="..." />
+
+        </div>
+        <div class="carousel-item">
+            <img src="{%static 'photos/template2.png'%}" class="d-block w-100" alt="..." />
+
+        </div>
+        <div class="carousel-item">
+            <img src="{%static 'photos/template3.png'%}" class="d-block w-100" alt="..." />
+
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container">
+    <div class="sec1">
+        <img src="../../basic.png" alt="" />
+    </div>
+    <div class="sec2">
+        <h1>Computer Basic</h1>
+        <p>
+            A person with a basic understanding of computers and software have an
+            easier time solving problems they may have encountered. For example,
+            someone with experience of getting an error while logging in may realize
+            it's because the caps lock key is enabled, and passwords are case
+            sensitive
+        </p>
+
+        <div class="accordion accordion-flush crousal" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Couese Structure(Things That You Learn in ths Course)
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        1. Knowing computer <br />2. Operating Computer using GUI Based
+                        Operating System <br />
+                        3. Understanding Word Processing <br />
+                        4. Using Spread Sheet <br />
+                        5. Introduction to Internet, WWW and web browsers <br />
+                        6. Communications and Collaboration <br />
+                        7. Making small presentation <br />
+                        8. Financial Literacy for banking Scheme and Applications
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg">Enroll Now</button>
+        <a target="_blank"
+            href="https://drive.google.com/file/d/1PKi4-mv1c5T4UjqyIZ8USJSY9udWtbmZ/view?usp=sharing"><button
+                type="button" class="btn btn-primary btn-lg" style="margin-top: 5px">
+                Downmload full Course Schema
+            </button></a>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,157 @@
+{% load  static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -- -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- Linking Icon -->
+    <link rel="icon" href="{%static 'photos/logo.png'%}">
+
+    <!-- Goolge Fonts ............................... -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <!-- End Fonts ................................./////////////// -->
+    <link rel="stylesheet" href="{% static 'css/ediotnalstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+    <link rel="stylesheet" href="ediotnalstyle.css">
+    <link href=" bootstrap.css" rel="stylesheet"> -->
+    <style>
+        {
+            % block style %
+        }
+
+            {
+            % endblock style %
+        }
+    </style>
+
+
+    <title>{% block title %}
+
+        {% endblock title %}</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'index' %}">Awadh Academy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}" {% block contact_color %}
+                            {% endblock contact_color %}>Contact-us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Materials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{% url 'class8' %}" {% block class8_color %}
+                                    {% endblock class8_color %}>Class1-8</a></li>
+                            <li><a class="dropdown-item" href="{% url 'class9' %}" {% block class9_color %}
+                                    {% endblock class9_color %}>Class 9</a></li>
+                            <li><a class="dropdown-item" href="{% url 'class10' %}" {% block class10_color %}
+                                    {% endblock class10_color %}>Class 10</a></li>
+                            <li><a class="dropdown-item" href="#" {% block class11_color %}
+                                    {% endblock class11_color %}>Class 11</a></li>
+                            <li><a class="dropdown-item" href="#" {% block class12_color %}
+                                    {% endblock class12_color %}>Class 12</a></li>
+                            <li><a class="dropdown-item" href="{% url 'booklist'%}" {% block books_color %}
+                                    {% endblock books_color %}>Books</a></li>
+                            <li><a class="dropdown-item" href="{% url 'programming' %}" {% block programming_color %}
+                                    {% endblock programming_color %}>Computer Programming</a></li>
+                            <li><a class="dropdown-item" href="devloper/me.html" style=" font-weight: bold;"
+                                    {% block about_color %}{% endblock about_color %}>About Devloper</a></li>
+                            <!-- <li>
+                    <hr class="dropdown-divider">
+                  </li> -->
+                            <li><a class="dropdown-item" href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'registeration' %}"
+                            style=" color: red; font-weight: bold;">login / sign-up</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Message To all !!!!</strong> At this time you may feel some issue with webpage its an temporary issue
+        developers are continuously working to make your work smooth
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+
+    {% block body %}
+
+    {% endblock body %}
+
+
+
+
+    <div class="last" {% block footer %}{% endblock footer %}>
+        <h3>Thanks for visiting our Webpage</h3>
+        <p>Awadh wishes you and your family a very happy and colorful holi </p>
+        <a uhhref="..." class="links" target="black">Instagram | </a>
+        <a href="..." class="links" target="black">Facebook |</a>
+        <a href="..." class="links" target="black">Linkedin |</a>
+        <a href="..." class="links" target="black">Telegram</a>
+    </div>
+    <!-- <h1 class="word">Work In webpage are in progress ...........................</h1> -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+
+        {% block script %}
+    
+        {% endblock script %}
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+-->
+</body>
+
+</html>

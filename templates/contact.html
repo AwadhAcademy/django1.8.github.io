@@ -1,0 +1,49 @@
+{% extends "basic.html" %} 
+{% block title %}Awadh contacts{% endblock title %}
+{%load  static %}
+{% block contact_color %}
+style=" color: red; font-weight: bold;"
+{% endblock contact_color %}
+{%block body %}
+<div class="contace_data">
+  <a href="{% url 'index'%}">
+    <h1>Awadh Academy</h1>
+  </a>
+  <img src="{%static 'photos/logo.PNG'%}" alt="" class="logo2" />
+</div>
+
+<div class="contace_source">
+  <div>
+    <img class="con_images" src="{% static 'photos/face.png'%}" alt="Not Loded" class="sourses" />
+    <p>
+      <a
+        href="https://www.facebook.com/profile.php?id=100013180389191"
+        target="none"
+        >Facebook</a
+      >
+    </p>
+  </div>
+
+  <div>
+    <img class="con_images" src="{%static 'photos/whats.png'%}" alt="Not Loded" class="sourses" />
+    <p><a href="">Whatsapp</a></p>
+  </div>
+  <div>
+    <img class="con_images" src="{%static 'photos/insta.png'%}" alt="Not Loded" class="sourses" />
+    <p>
+      <a href="https://www.instagram.com/ayushgupta385/" target="none"
+        >instagram</a
+      >
+    </p>
+  </div>
+  <div>
+    <img
+      class="con_images"
+      src="{%static 'photos/talegram.png'%}"
+      alt="Not Loded"
+      class="sourses"
+    />
+    <p><a href="">Talegram</a></p>
+  </div>
+</div>
+{% endblock body %}
