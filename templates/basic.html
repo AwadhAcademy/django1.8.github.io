@@ -31,20 +31,17 @@
 
     <link rel="stylesheet" href="ediotnalstyle.css">
     <link href=" bootstrap.css" rel="stylesheet"> -->
-    <style>
-        {
-            % block style %
-        }
-
-            {
-            % endblock style %
-        }
-    </style>
 
 
     <title>{% block title %}
 
         {% endblock title %}</title>
+    <style>
+
+        {% block style %}
+
+        {% endblock style %}
+    </style>
 </head>
 
 <body>
@@ -63,7 +60,8 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blogs</a>
+                        <a class="nav-link" href="{% url 'live'%}" {% block live_color %}
+                            {% endblock live_color %}>Awadh Live</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'contact' %}" {% block contact_color %}
@@ -99,7 +97,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'registeration' %}"
-                            style=" color: red; font-weight: bold;">login / sign-up</a>
+                            style=" color: rgb(0, 255, 195); font-weight: bold;">login / sign-up</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -119,19 +117,27 @@
 
     {% block body %}
 
+
+
+
+
     {% endblock body %}
-
-
-
-
-    <div class="last" {% block footer %}{% endblock footer %}>
+    <!-- <div class="last" {% block footer %}{% endblock footer %}>
+    </div> -->
+    <!-- <footer  style="    flex-direction: column;
+    align-items: center;
+    justify-content: center;    background: gray">
         <h3>Thanks for visiting our Webpage</h3>
         <p>Awadh wishes you and your family a very happy and colorful holi </p>
-        <a uhhref="..." class="links" target="black">Instagram | </a>
-        <a href="..." class="links" target="black">Facebook |</a>
-        <a href="..." class="links" target="black">Linkedin |</a>
-        <a href="..." class="links" target="black">Telegram</a>
-    </div>
+        <div style="display: flex;">
+
+            <a uhhref="..." class="links" target="black">Instagram | </a>
+            <a href="..." class="links" target="black">Facebook |</a>
+            <a href="..." class="links" target="black">Linkedin |</a>
+            <a href="..." class="links" target="black">Telegram</a>
+        </div>
+
+    </footer> -->
     <!-- <h1 class="word">Work In webpage are in progress ...........................</h1> -->
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -140,12 +146,10 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script>
 
-        {% block script %}
-    
-        {% endblock script %}
-    </script>
+    {% block script %}
+
+    {% endblock script %}
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

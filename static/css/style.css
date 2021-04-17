@@ -157,6 +157,11 @@
   right: 38%;
   bottom: -60px;
 }
+.class
+{
+  background: url('classback.jpg');
+}
+
 
 @media (max-width:600px) {
   .logo2 {

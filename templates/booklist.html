@@ -6,17 +6,174 @@ Awadh Library
 {% block books_color %}
 style=" color: red; font-weight: bold;"
 {% endblock books_color %}
-
+{%block style%}
+.containera
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #80808052;
+    margin: 0px 10%;
+}
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 0;
+    width: 67vw;
+    /* margin: 10px 0px; */
+    background: #48d6ae;
+    font-size: 19px;
+    font-family: 'Rubik';
+    border: none;
+}
+.accordion-body {
+    padding: 1rem 1.25rem;
+    background: #8fbc8f52;
+}
+body
+{
+    background: black;
+}
+{%endblock style%}
 
 {% block body %}
 
-<div class="container">
-    <div class="class" id="class-1">class 6</div>
-    <div class="class" id="class-2">class 7</div>
-    <div class="class" id="class-3">class 8</div>
-    <div class="class" id="class-4">class 9</div>
-    <div class="class" id="class-5">class 10</div>
-    <div class="class" id="class-6">class 11</div>
-    <div class="class" id="class-7">class 12</div>
+<div class="containera">
+
+    <div class="forms">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Class 6
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Maths</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Social Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Computer</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Sanskrit</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">English</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Class 7
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Maths</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Social Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Computer</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Sanskrit</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">English</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Class 8
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Maths</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Social Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Computer</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Sanskrit</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">English</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                        Class 9
+                    </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Maths</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Social Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Computer</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Sanskrit</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">English</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+                        Class 10
+                    </button>
+                </h2>
+                <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Maths</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Social Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Computer</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Sanskrit</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">English</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
+                        Class 11
+                    </button>
+                </h2>
+                <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Maths</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Social Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Computer</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Sanskrit</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">English</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseseven" aria-expanded="false" aria-controls="flush-collapseseven">
+                        Class 12
+                    </button>
+                </h2>
+                <div id="flush-collapseseven" class="accordion-collapse collapse" aria-labelledby="flush-headingseven"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Maths</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Social Science</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Computer</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">Sanskrit</a><br>
+                        <a  href="#" style="text-decoration: none; color:rgb(104,80,138); font-family:'ruibik' ">English</a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock body %}

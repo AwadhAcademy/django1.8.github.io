@@ -183,7 +183,10 @@ svg {
     /* height: 120px; */
     background: #7d7d7d;
     text-align: center;
+    position: relative;
+    top: 23vh;
 }
+
 
 .links {
     position: relative;

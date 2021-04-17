@@ -1,0 +1,127 @@
+{% extends "basic.html" %}
+{% block title %}
+Awadh Live
+{% endblock title %}
+
+{% block live_color %}
+style=" color: red;
+font-weight: bold;"
+{% endblock live_color %}
+
+{% load static%}
+
+{% block style %}
+body{
+background: url({% static 'photos/live_back.jpg'%});
+background-repeat:no-repeat;
+background-size: cover
+}
+.ml6 {
+position: relative;
+font-weight: 900;
+font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+position: relative;
+display: inline-block;
+padding-top: 0.2em;
+padding-right: 0.05em;
+padding-bottom: 0.1em;
+overflow: hidden;
+}
+
+.ml6 .letter {
+display: inline-block;
+line-height: 1em;
+}
+.anime
+{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.letters
+{
+background: #487d898f;
+padding: 35px;
+color: #cac2d2;
+}
+.class_links
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 14vh;
+    background: #4f595f6b;
+}
+.links
+{
+    margin-right: 39px;
+    background-color: #ffffff78;
+    width: 22vw;
+}
+
+
+
+@media (max-width:600px) 
+{
+    .letters {
+    
+        font-size: 29px;
+    }
+    .links {
+        width: 100vw;
+        margin-bottom: 10%;
+        margin-right: 0%;
+
+  }
+  .class_links {
+  
+    flex-direction: column;
+    align-items: center;
+{% endblock style %}
+
+{% block body %}
+<div class="anime">
+
+    <h1 class="ml6">
+        <span class="text-wrapper">
+            <span class="letters">Awadh Live Session</span>
+        </span>
+    </h1>
+
+</div>
+    
+<div class="btn-group class_links" role="group" aria-label="Basic outlined example">
+{% for i in record%}
+    <a href="{{i.Juniour_calss}}"><button type="button" class="btn btn-outline-primary links" target="blank">class 1-8 <br>  <strong>join Now</strong> </button></a>
+    <a href="{{i.Calss9_10}}"><button type="button" class="btn btn-outline-primary links" target="blank">class 9-10 <br>  <strong>join Now</strong> </button></a>
+    <a href="{{i.Calss11_12}}"><button type="button" class="btn btn-outline-primary links" target="blank">class 11-12 <br>  <strong>join Now</strong> </button></a>
+{% endfor%}
+</div>
+{% endblock body %}
+{% block script %}
+
+<script>
+    var textWrapper = document.querySelector('.ml6 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    anime.timeline({
+            loop: true
+        })
+        .add({
+            targets: '.ml6 .letter',
+            translateY: ["1.1em", 0],
+            translateZ: 0,
+            duration: 750,
+            delay: (el, i) => 50 * i
+        }).add({
+            targets: '.ml6',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+</script>
+{% endblock script %}

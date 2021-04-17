@@ -15,6 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path ,include
+from django.conf.urls.static import static
+from django.conf.urls import url
+from django.views.static import serve
+from django.conf import settings
 from . import file
 
 urlpatterns = [
@@ -34,5 +38,9 @@ urlpatterns = [
     path('programming/courses/django/django/', file.django ,name="django"),
     path('programming/courses/androidstudio/androidstudio/', file.androidstudio ,name="androidstudio"),
     path('booklist', file.booklist ,name="booklist"),
+    path('live', include('livesession.urls') ,name="live"),
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
     
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
